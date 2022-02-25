@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'milligram-sophia'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_45500734922B4ACB983440D9594B69DA }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6C6751912F0E4AC8A7866DD073A62BFF }}
