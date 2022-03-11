@@ -8,7 +8,7 @@ In this challenge you will learn how to:
 
 - how to create a Face API service in Azure
 - how to connect you Face API service with your App
-- how to pass the API key to you App using Github Secrets
+- how to pass the API key to you App using GitHub Secrets
 - how to take a selfie 😉
 
 *API - Application Programming Interface: A software intermediary that allows two applications to talk to each other*
@@ -31,7 +31,7 @@ The first step in creating our Face API is to create a new resource.
 - Click the **big "+" symbol** on the main page
 - Pick the category **"AI + Machine Learning"**
 - Create a **Face** service.
-![](./images/create-face.png)
+![](./images/dark/create-face.png)
 
 ## Create Face Cognitive Service
 
@@ -39,19 +39,24 @@ The first step in creating our Face API is to create a new resource.
 - Create a new **Resource Group** (A storage for multiple resources)
 - Choose *West Europe* as **Region** (Location of datacenter where the service is deployed)
 - Create a **unique name** and select the **Standard S0 Pricing Tier**.
-![](./images/create-face-options.png)
+![](./images/dark/create-face-options.png)
 
-## Integrate Face Service Credential into Github Secret
+## Integrate Face Service Credential into GitHub Secrets
 
 The API key is a unique identifier, which we will add to our code. By doing so, we can connect our code to the API and perform API calls.
-![](./images/milligram-face-api-access-keys.png)
+![](./images/dark/milligram-face-api-access-keys.png)
 
 In Action Secrets you can store encrypted variables that you create in an organization, repository, or repository environment. These secrets are available to use in GitHub Actions workflows.
-- Set the name and value similar to picture and replace the *xxxxxx* part with your values
+- Navigate to your repository's _Settings_, then to _Secrets_ and _Actions_
+- Click on _New repository secret_
+- Set the name to _VUE_APP_FACE_API_ENDPOINT_
+- Set the value to your FACE service's endpoint: https://xxxxxxx.cognitiveservices.azure.com/
 - Add the secret
-![](./images/vue-app-face-api-endpoint-secret.png)
+![](./images/dark/vue-app-face-api-endpoint-secret.png#gh-dark-mode-only)
+![](./images/light/vue-app-face-api-endpoint-secret.png#gh-light-mode-only)
 
-![](./images/vue-app-face-api-key-secret.png)
+![](./images/dark/vue-app-face-api-key-secret.png#gh-dark-mode-only)
+![](./images/light/vue-app-face-api-key-secret.png#gh-light-mode-only)
 
 ## Run Frontend Pipeline again
 
@@ -79,10 +84,8 @@ Ask your coach if you did not succeed. We have you covered with a back up. ⚠�
 
 Look at the prepared application with our pictures for you to play around [Milligram](https://codeunicornmartha.github.io/FemaleAIAppInnovationEcosystem/#/?stack-key=a78e2b9a).
 
-:::tip
-📝
-  - Link1
-  - Link2
-:::
+_Tipps 📝_
+  > - [Machine Learning in 5 Levels of Difficulty](https://youtu.be/5q87K1WaoFI)
+  > - [▶ 2](./WorkInProgress)
 
-[◀ Previous challenge](../../day1/Application/README.md) | [🔼 Day x](../../README.md) | [Next challenge ▶](../Speech/README.md)
+[◀ Previous challenge](../../day1/Application/README.md) | [🔼 Home](../../README.md) | [Next challenge ▶](../Speech/README.md)
